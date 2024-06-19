@@ -1,38 +1,215 @@
-.App {
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+*{
+  background-color: beige;
+}
+h2 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  background:lightsalmon;
+  color:black;
+  padding: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightsalmon;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  font-size: 1.5rem;
+  background-color: lightpink;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  background-color: lightsalmon;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+  background-color: lightsalmon;
+}
+
+.nav-links a {
+  color: black;
+  background-color: lightsalmon;
+  text-decoration: none;
+}
+
+.hero {
+  background:beige;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin: 0;
+  background-color: beige;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  background-color: beige;
+}
+
+.hero-button {
+  background: #333;
+  color:beige;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.testimonials {
+  padding: 2rem;
+  text-align: center;
+}
+.btns{
+  background-color:lightskyblue;
+}
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials blockquote {
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+.testimonials button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.cta {
+  background:beige;
+  color:black;
+  padding: 5rem;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cta form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cta input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cta-button {
+  background:lightskyblue;
+  color: #333;
+  border: none;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+.footer {
+  
+  color:black;
+  padding: 1rem;
+  text-align: center;
+}
+.product-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.feature-item {
+  text-align: center;
+  width: 22%; 
+  margin: 10px; 
+}
+
+.feature-item img {
+  width: 50%; 
+  max-width: 60%;
+  height: auto;
+}
+
+.feature-text {
+  margin-top: 10px;
+}
+.feature-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-text p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.about-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+
+.about-text {
+  max-width: 600px;
+  flex: 1;
+}
+
+.about-images {
+  display: flex;
+  gap: 2rem;
+}
+
+.about-images img {
+  height: 250px;
+  border-radius: 8px;
+}
+
+.info-list {
+  margin-bottom: 2rem;
+}
+
+.info-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-list li {
+  margin-bottom: 0.5rem;
+}
+
+.info-list strong {
+  font-weight: bold;
 }
